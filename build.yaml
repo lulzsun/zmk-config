@@ -17,3 +17,5 @@ include:
       shield: reviung41
       artifact-name: reviung41lp
       cmake-args: '-DDTC_OVERLAY_FILE="${GITHUB_WORKSPACE}/config/reviung41lp.keymap"'
+    - board: corne-ish_zen_left
+    - board: corne-ish_zen_right
