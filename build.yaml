@@ -15,3 +15,5 @@
 include:
   - board: nice_nano_v2
     shield: reviung41
+    artifact-name: reviung41lp
+    cmake-args: '-DDTC_OVERLAY_FILE="${GITHUB_WORKSPACE}/config/reviung41lp.overlay"'
