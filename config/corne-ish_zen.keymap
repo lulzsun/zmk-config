@@ -10,8 +10,8 @@
 #include <dt-bindings/zmk/bt.h>
 
 &kscan0 {
-    debounce-press-ms = <10>;
-    debounce-release-ms = <10>;
+    debounce-press-ms = <12>;
+    debounce-release-ms = <12>;
 };
 		
 / {
