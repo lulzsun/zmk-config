@@ -51,13 +51,13 @@
                         label = "RAISE";
 // -----------------------------------------------------------------------------------------
 // |      |     |  UP |     |     |     |   |     |     |     |  UP | END | DEL  |
-// |      | LFT | DWN | RGT |     |     |   |LBKT |RBKT | LFT | DWN | RGT |      |
-// | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   |     |     |     |     |     | CTRL |
+// |      | LFT | DWN | RGT |     |     |   |     |     | LFT | DWN | RGT |      |
+// | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   |     |     |PREV |PLAY |NEXT | CTRL |
 //                    |     | ALT |     |   |     | ALT |     |
                         bindings = <
-   &trans &trans   &kp UP   &trans &trans &trans                                 &trans   &trans   &trans   &kp UP   &kp END   &kp DEL
-   &trans &kp LEFT &kp DOWN &kp RIGHT &trans &trans                              &kp LBKT &kp RBKT &kp LEFT &kp DOWN &kp RIGHT &trans
-   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &trans   &trans   &trans   &trans   &trans    &kp RCTRL
+   &trans &trans   &kp UP   &trans &trans &trans                                 &trans   &trans   &trans     &kp UP   &kp END    &kp DEL
+   &trans &kp LEFT &kp DOWN &kp RIGHT &trans &trans                              &trans   &trans   &kp LEFT   &kp DOWN &kp RIGHT  &trans
+   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &trans   &trans   &kp C_PREV &kp C_PP &kp C_NEXT &kp RCTRL
 	                       &trans &kp LALT &trans                                &trans &kp RALT &trans
                         >;
                 };
