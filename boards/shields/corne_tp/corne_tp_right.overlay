@@ -57,7 +57,7 @@
 // nice!nano clone or a seeduino xiao.
 //
 // In all other cases you should try using the UART driver first.
-//#define MOUSE_PS2_DRIVER_UART
+#define MOUSE_PS2_DRIVER_UART
 
 
 // Configure the SCL and SDA pins using the`&pro_micro` notation.
@@ -80,8 +80,8 @@
 // But on the corne keyboard, these pins are used for the backlight. So, this
 // example config uses the pins D16 and D10 for clock and data and
 // D9 for the reset circuit.
-#define MOUSE_PS2_PIN_SCL_PRO_MICRO <&pro_micro 3 GPIO_ACTIVE_HIGH>
-#define MOUSE_PS2_PIN_SDA_PRO_MICRO <&pro_micro 2 GPIO_ACTIVE_HIGH>
+#define MOUSE_PS2_PIN_SCL_PRO_MICRO <&pro_micro 2 GPIO_ACTIVE_HIGH>
+#define MOUSE_PS2_PIN_SDA_PRO_MICRO <&pro_micro 3 GPIO_ACTIVE_HIGH>
 
 // Configure the Power-On-Reset pin
 //
@@ -115,7 +115,7 @@
 //
 // We don't define the SCL pin, because UART uses a baud rate instead of
 // a clock pin.
-#define MOUSE_PS2_PIN_SDA_PINCTRL <NRF_PSEL(UART_RX, 0, 17)>
+#define MOUSE_PS2_PIN_SDA_PINCTRL <NRF_PSEL(UART_RX, 0, 20)>
 
 // Configure UART BAUD Rate
 //
